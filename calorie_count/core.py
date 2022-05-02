@@ -4,6 +4,9 @@ __all__ = ['input_body_parameters', 'calculate_bmr_amr']
 
 # Cell
 def input_body_parameters(message_dict):
+    """
+    function provides input for the body parameters: height, weight, age, gender and activity level
+    """
     input_values = [170, 56, 41,'m', 1]
     body_params = {}
     n = range(len(message_dict))
@@ -28,7 +31,9 @@ def input_body_parameters(message_dict):
     return body_params
 
 def calculate_bmr_amr(body_parameters):
-
+    """
+    function calculates bmr and amr using values from the dictionary body_parameters
+    """
     dict_activity = {1:1.2, 2:1.37, 3:1.55, 4:1.725, 6:1.9}
 
     if body_parameters['gender'] == 'w':
