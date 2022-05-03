@@ -21,7 +21,7 @@ The aim of the project is to build a web application, where users can type in th
 
 - Web-Application with Streamlit (Web-UI) (alternatively Flask or FastAPI)*
 
-### LAB 3 (to define)
+### Release 3 (to define)
 
 - Webscraper - (get data)
 - Data bank ("Datawarehouse") 
