@@ -3,7 +3,8 @@
 __all__ = ["index", "modules", "custom_doc_links", "git_url"]
 
 index = {"input_body_parameters": "00_core.ipynb",
-         "calculate_bmr_amr": "00_core.ipynb"}
+         "calculate_bmr_amr": "00_core.ipynb",
+         "calculate_burned_calories": "00_core.ipynb"}
 
 modules = ["core.py"]
 

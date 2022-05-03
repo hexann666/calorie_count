@@ -10,7 +10,7 @@ entries:
       title: Overview
       url: /
     - output: web,pdf
-      title: Calorie
+      title: Calorie counter
       url: core.html
     output: web
     title: calorie_count
