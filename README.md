@@ -6,9 +6,9 @@ The aim of the project is to build a web application, where users can type in th
 
 `pip install calorie_count`
 
-## Formal requirements
+## Releases (defined according to the Lab's formal requirements)
 
-### LAB 1
+### Release 1:
 
 - git repository available on GitLab/Hub
 - git structure with readme, docs, tests
@@ -17,11 +17,11 @@ The aim of the project is to build a web application, where users can type in th
 - docker container
 - pip package
 
-### LAB 2
+### Release 2 (to define)
 
 - Web-Application with Streamlit (Web-UI) (alternatively Flask or FastAPI)*
 
-### LAB 3
+### LAB 3 (to define)
 
 - Webscraper - (get data)
 - Data bank ("Datawarehouse") 
