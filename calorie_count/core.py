@@ -89,7 +89,7 @@ def calculate_burned_calories(body_parameters):
 
     """
 
-    met_list = read_csv('data/met_list_activities.csv',
+    met_list = pandas.read_csv('data/met_list_activities.csv',
                             sep=';',
                             encoding='ANSI',
                             decimal=',',
