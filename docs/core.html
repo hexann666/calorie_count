@@ -51,8 +51,7 @@ nb_path: "00_core.ipynb"
 <div class="output_markdown rendered_html output_subarea ">
 <h4 id="input_body_parameters" class="doc_header"><code>input_body_parameters</code><a href="https://github.com/hexann666/calorie_count/tree/branch/calorie_count/core.py#L6" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>input_body_parameters</code>(<strong><code>message_dict</code></strong>)</p>
 </blockquote>
-<p>returns a dictionary with user input of body parameters:
-    height, weight, age, gender and activity level</p>
+<p>returns a dictionary with user input of body parameters: height, weight, age, gender and activity level</p>
 <p>:param message_dict: a dictionary with body parameters as keys and message for user as values
 :type message_dict: dict</p>
 <p>:raises AssertError: if inputs of type int are negative
@@ -115,12 +114,12 @@ nb_path: "00_core.ipynb"
 <div class="output_markdown rendered_html output_subarea ">
 <h4 id="calculate_burned_calories" class="doc_header"><code>calculate_burned_calories</code><a href="https://github.com/hexann666/calorie_count/tree/branch/calorie_count/core.py#L73" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>calculate_burned_calories</code>(<strong><code>body_parameters</code></strong>)</p>
 </blockquote>
-<p>returns the amount of calories burned during activity and during the day apart of activity</p>
+<p>Returns the amount of calories burned during activity and during the day apart of activity.</p>
 <p>To calculate calories for specific activity its MET value is chosen from the table.
 To assign MET user should type in the name of her activity for the search.
 If user doesn't provide this information, activity is considered to be standing and light effort with MET of 1.4
-Calories burned during rest of the day are calculated with standard MET of 1.2.</p>
-<p>:param body_parameters
+Calories burned during rest of the day are calculated with standard MET of 1.2.
+:param body_parameters
 :type body_parameters: dict</p>
 <p>:return burned_cal
 :rtype float
@@ -151,17 +150,7 @@ Calories burned during rest of the day are calculated with standard MET of 1.2.<
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-
-<span class="n">met_list</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;data/met_list_activities.csv&#39;</span><span class="p">,</span>
-                            <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;;&#39;</span><span class="p">,</span> 
-                            <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;ANSI&#39;</span><span class="p">,</span> 
-                            <span class="n">decimal</span><span class="o">=</span><span class="s1">&#39;,&#39;</span><span class="p">,</span> 
-                            <span class="n">error_bad_lines</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-<span class="n">nr</span> <span class="o">=</span> <span class="mi">180</span>
-<span class="n">met</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">met_list</span><span class="p">[</span><span class="s1">&#39;METs&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">nr</span><span class="p">])</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">met</span><span class="p">))</span>
-<span class="sd">&quot;&quot;&quot;</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">#met_list</span>
 <span class="sd">met = 0</span>
 <span class="sd">time = 30</span>
@@ -189,30 +178,6 @@ Calories burned during rest of the day are calculated with standard MET of 1.2.<
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>&lt;class &#39;float&#39;&gt;
-</pre>
-</div>
-</div>
-
-<div class="output_area">
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>&#34;\n#met_list\nmet = 0\ntime = 30\n\nprint(met_list[&#39;METs&#39;].iloc[met])\n\nwhile met == 0:\n    your_act = input(&#39;Type in the activity you were doing today&#39;)\n    # cheking, if the typed activity is in the list of activities\n    if len(met_list[met_list[&#39;SPECIFIC MOTION&#39;].str.contains(your_act)]) &gt; 1:\n        print(&#39;\n&#39;, met_list[met_list[&#39;SPECIFIC MOTION&#39;].str.contains(your_act)])\n        met = int(input(&#39;\nSelect number of your activity from the list&#39;))\n    elif len(met_list[met_list[&#39;SPECIFIC MOTION&#39;].str.contains(your_act)]) == 1:\n        met = met_list[met_list[&#39;SPECIFIC MOTION&#39;].str.contains(your_act)].index\n    else:\n        print(&#39;There was no matching activity. Please try another activity name&#39;)\n    print(met_list[&#39;METs&#39;].iloc[met])\n    burned_cal = met_list[&#39;METs&#39;].iloc[met] * body_params[&#39;weight&#39;] * time/60\n    bmr_cal = 1.2 * body_params[&#39;weight&#39;] * (24 - time / 60)\n    print(&#39;\nYour Total Daily Energy Expenditure was {} kcal today.\n    You burned {} kcal during your activity&#39;.format(\n        round((burned_cal + bmr_cal), 2),  \n        burned_cal))\n&#34;</pre>
-</div>
-
-</div>
-
 </div>
 </div>
 

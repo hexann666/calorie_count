@@ -4,8 +4,8 @@ __all__ = ['input_body_parameters', 'calculate_bmr_amr', 'calculate_burned_calor
 
 # Cell
 def input_body_parameters(message_dict):
-    """returns a dictionary with user input of body parameters:
-        height, weight, age, gender and activity level
+    """
+    returns a dictionary with user input of body parameters: height, weight, age, gender and activity level
 
     :param message_dict: a dictionary with body parameters as keys and message for user as values
     :type message_dict: dict
@@ -72,13 +72,12 @@ def calculate_bmr_amr(body_parameters):
 
 def calculate_burned_calories(body_parameters):
     """
-    returns the amount of calories burned during activity and during the day apart of activity
+    Returns the amount of calories burned during activity and during the day apart of activity.
 
     To calculate calories for specific activity its MET value is chosen from the table.
     To assign MET user should type in the name of her activity for the search.
     If user doesn't provide this information, activity is considered to be standing and light effort with MET of 1.4
     Calories burned during rest of the day are calculated with standard MET of 1.2.
-
     :param body_parameters
     :type body_parameters: dict
 
@@ -86,12 +85,11 @@ def calculate_burned_calories(body_parameters):
     :rtype float
     :return bmr_cal
     :rtype float
-
     """
 
-    met_list = pandas.read_csv('data/met_list_activities.csv',
+    met_list = pd.read_csv('data/met_list_activities.csv',
                             sep=';',
-                            encoding='ANSI',
+                            #encoding='ANSI',
                             decimal=',',
                             error_bad_lines=False)
     nr = 0
