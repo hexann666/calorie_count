@@ -7,14 +7,14 @@ def input_body_parameters(message_dict):
     """
     returns a dictionary with user input of body parameters: height, weight, age, gender and activity level
 
-    :param message_dict: a dictionary with body parameters as keys and message for user as values
-    :type message_dict: dict
+    Parameters: message_dict: dict
+                a dictionary with body parameters as keys and message for user as values
 
-    :raises AssertError: if inputs of type int are negative
-    :raises AssertError: if inputs of type string are not 'w' or 'm'
+    Raises: AssertError: if inputs of type int are negative
+            AssertError: if inputs of type string are not 'w' or 'm'
 
-    :rtype: int
-    :return: multiplication of all arguments
+    Return: dict
+            a dictionary with body parameters as keys and their values as values
     """
     input_values = [170, 56, 41,'m', 1]
     body_params = {}
@@ -43,17 +43,15 @@ def input_body_parameters(message_dict):
 
 def calculate_bmr_amr(body_parameters):
     """
-    returns basal metabolic rate(bmr) and active metabolic rate (amr)
+    returns basal metabolic rate (bmr) and active metabolic rate (amr)
 
-    source for the formulas used for calculations: https://www.verywellfit.com/how-many-calories-do-i-need-each-day-2506873
+    Parameters: body_parameters: dict
+                dictionary with body parameters as keys and their values as values
 
-    :param body_parameters
-    :type body_parameters: dict
-
-    :return bmr
-    :rtype float
-    :return amr
-    :rtype float
+    Returns: float
+            basal metabolic rate (bmr)
+            float
+            active metabolic rate (amr)
     """
     dict_activity = {1:1.2, 2:1.37, 3:1.55, 4:1.725, 6:1.9}
 
@@ -78,13 +76,14 @@ def calculate_burned_calories(body_parameters):
     To assign MET user should type in the name of her activity for the search.
     If user doesn't provide this information, activity is considered to be standing and light effort with MET of 1.4
     Calories burned during rest of the day are calculated with standard MET of 1.2.
-    :param body_parameters
-    :type body_parameters: dict
 
-    :return burned_cal
-    :rtype float
-    :return bmr_cal
-    :rtype float
+    Parameters: body_parameters: dict
+                dictionary with body parameters as keys and their values as values
+
+    Returns: float
+            amount of calories burned during activity
+            float
+            amount of calories burned during the day apart of activity
     """
 
     met_list = pd.read_csv('data/met_list_activities.csv',
