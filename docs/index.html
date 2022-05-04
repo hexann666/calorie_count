@@ -31,13 +31,39 @@ nb_path: "index.ipynb"
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Install">Install<a class="anchor-link" href="#Install"> </a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><code>pip install your_project_name</code></p>
+<h2 id="Releases-(defined-according-to-the-Lab's-formal-requirements)">Releases (defined according to the Lab's formal requirements)<a class="anchor-link" href="#Releases-(defined-according-to-the-Lab's-formal-requirements)"> </a></h2><h3 id="Release-1:">Release 1:<a class="anchor-link" href="#Release-1:"> </a></h3><ul>
+<li>git repository available on GitLab/Hub</li>
+<li>git structure with readme, docs, tests</li>
+<li>documentation</li>
+<li>unit tests</li>
+<li>docker container</li>
+<li>pip package</li>
+</ul>
+<h3 id="Release-2-(to-define)">Release 2 (to define)<a class="anchor-link" href="#Release-2-(to-define)"> </a></h3><ul>
+<li>Web-Application with Streamlit (Web-UI) (alternatively Flask or FastAPI)*</li>
+</ul>
+<h3 id="Release-3-(to-define)">Release 3 (to define)<a class="anchor-link" href="#Release-3-(to-define)"> </a></h3><ul>
+<li>Webscraper - (get data)</li>
+<li>Data bank ("Datawarehouse") </li>
+<li>(Optional) Kubernetes (eg. Okteto)</li>
+<li>(Optional) Worfklow in MLops-Stil</li>
+</ul>
+<h2 id="Technical-requirements">Technical requirements<a class="anchor-link" href="#Technical-requirements"> </a></h2><ul>
+<li>System shall provide input fields for the input parameters (height, weight, age, gender, activity level).</li>
+<li>User should input the body parameters in the order, in which system will request them and confirm that the input is complete.</li>
+<li>System should store the variables provided by user until the end of transaction.</li>
+<li>If all input variables are valid, system should calculate calorie intake recommendation and show it on the screen.</li>
+<li>System shall provide input fields for the activity name and time.</li>
+<li>User should enter her activity name in the field and confirm that the input is complete.</li>
+<li>After the input was confirmed by user, system shall look up the input string in the data base in the column activity_name.</li>
+<li>It there is no search result, system shall show a message 'Please type again', wait for the new input and repeat the serach as soon as the new input is confirmed.</li>
+<li>If there is only one match result, system shall keep the value from the column "METs".</li>
+<li>If there is more than one result, system shall show all results.</li>
+<li>If system provides to user multiple results, she should choose her activity from the provided list and type in the respective number. System should keep the value from the column "METs" for the row number, that was typed in by the user.</li>
+<li>If MET value is saved and body parameters are available from the previous step, system shall calculate the spent calories and total calories for the day.</li>
+<li>If calculation step succeeded, system shall print the result on the screen.</li>
+<li>the input variables and results shall not be stored after the last result is displayed.</li>
+</ul>
 
 </div>
 </div>
@@ -53,8 +79,8 @@ nb_path: "index.ipynb"
 <p>First you will provide your height, weight and age and calculate your Basal Metabolic Rate, the number of calories required to keep your body functioning at rest.</p>
 <p>After choosing your usual level of activity the Active Metabolic Rate, the number of calories that we consume on a daily basis depending on our height, gender, age, weight and entered activity level whilst maintaining current weight, will be calculated.</p>
 <p>Than you will be asked to type in the activity you were doing today. If there are more than one activities matching your input, you will select one from the lst that matches your search pattern. Additionally you will enter the time you were doing this activity.</p>
-<p>source for the formulas:    <a href="https://www.verywellfit.com/how-many-calories-do-i-need-each-day-2506873">https://www.verywellfit.com/how-many-calories-do-i-need-each-day-2506873</a>
-source for the MET values:  <a href="https://golf.procon.org/met-values-for-800-activities/">https://golf.procon.org/met-values-for-800-activities/</a></p>
+<p>source for the formulas:    <a href="https://www.verywellfit.com/how-many-calories-do-i-need-each-day-2506873">https://www.verywellfit.com/how-many-calories-do-i-need-each-day-2506873</a></p>
+<p>source for the MET values:  <a href="https://golf.procon.org/met-values-for-800-activities/">https://golf.procon.org/met-values-for-800-activities/</a></p>
 
 </div>
 </div>
