@@ -2,6 +2,14 @@
 
 
 
+The aim of the project is to build a web application, where users can type in their body parameters and get an estimation of their recommended daily calories intake. In the second step users can provide information about the type of their sport activity and time they were doing it and get a calculation of spent calories during this activity.
+
+Documentation is available at https://hexann666.github.io/calorie_count/
+
+# Install
+
+`pip install calorie_count`
+
 ## Releases (defined according to the Lab's formal requirements)
 
 ### Release 1:
