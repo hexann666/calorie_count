@@ -144,6 +144,45 @@ Calories burned during rest of the day are calculated with standard MET of 1.2.<
 </div>
     {% endraw %}
 
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">met_list = pd.read_csv(&#39;data/met_list_activities.csv&#39;,</span>
+<span class="sd">                            sep=&#39;;&#39;, </span>
+<span class="sd">                            #encoding=&#39;ANSI&#39;, </span>
+<span class="sd">                            decimal=&#39;,&#39;, </span>
+<span class="sd">                            error_bad_lines=False)</span>
+
+<span class="sd">print(str(met_list[&#39;SPECIFIC MOTION&#39;].iloc[78]))</span>
+<span class="sd">&quot;&quot;&quot;</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>aerobic, step, with 4-inch step
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
 </div>
  
 

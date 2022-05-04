@@ -85,6 +85,7 @@ def calculate_burned_calories(body_parameters):
             float
             amount of calories burned during the day apart of activity
     """
+    import pandas as pd
 
     met_list = pd.read_csv('data/met_list_activities.csv',
                             sep=';',
@@ -107,14 +108,12 @@ def calculate_burned_calories(body_parameters):
                 nr = int(input('\nSelect MET of your activity from the list'))
             except:
                 nr = 176
-            #met = float(met_list['METs'].iloc[nr])
-            #activity = met_list['SPECIFIC MOTION'].iloc[nr]
         elif len(met_list[met_list['SPECIFIC MOTION'].str.contains(your_act)]) == 0:
             print('Please type again')
         elif len(met_list[met_list['SPECIFIC MOTION'].str.contains(your_act)]) == 1:
             nr = met_list[met_list['SPECIFIC MOTION'].str.contains(your_act)].index
         met = float(met_list['METs'].iloc[nr])
-        activity = met_list['SPECIFIC MOTION'].iloc[nr]
+        activity = str(met_list['SPECIFIC MOTION'].iloc[nr])
     try:
         time = int(input('Type in the time of your activity for today in minutes:'))
     except:
