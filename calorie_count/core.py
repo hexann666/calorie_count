@@ -3,19 +3,29 @@
 __all__ = ['input_body_parameters', 'calculate_bmr_amr', 'calculate_burned_calories']
 
 # Cell
-def input_body_parameters(message_dict):
+def input_body_parameters():
     """
     returns a dictionary with user input of body parameters: height, weight, age, gender and activity level
 
-    Parameters: message_dict: dict
-                a dictionary with body parameters as keys and message for user as values
-
     Raises: AssertError: if inputs of type int are negative
+
             AssertError: if inputs of type string are not 'w' or 'm'
 
     Return: dict
             a dictionary with body parameters as keys and their values as values
     """
+    message_activity_level = 'Please choose your level of activity:\
+                \n1 - little to no exercise \
+                \n2 - light exercise 1–3 days a week \
+                \n3 - moderate exercise 3–5 days a week \
+                \n4 - hard exercises 6–7 days a week \
+                \n5 - physically demanding job or particularly challenging exercise routine'
+    message_dict = {'height': 'Input height in cm',
+                'weight': 'Input weight in kg',
+                'age': 'Input age in full years',
+                'gender': 'Input biological gender as w or m',
+                'activity': message_activity_level}
+
     input_values = [170, 56, 41,'m', 1]
     body_params = {}
     n = range(len(message_dict))
@@ -50,6 +60,7 @@ def calculate_bmr_amr(body_parameters):
 
     Returns: float
             basal metabolic rate (bmr)
+
             float
             active metabolic rate (amr)
     """
@@ -65,6 +76,9 @@ def calculate_bmr_amr(body_parameters):
             (6.755 * body_parameters['age']))
 
     amr = bmr * dict_activity[body_parameters['activity']]
+
+    print(f'\nYour BMR is {bmr:.1f}')
+    print(f'To stay at your current weight you need to consume {amr:.0f} calories')
     return bmr, amr
 
 
@@ -82,6 +96,7 @@ def calculate_burned_calories(body_parameters):
 
     Returns: float
             amount of calories burned during activity
+
             float
             amount of calories burned during the day apart of activity
     """

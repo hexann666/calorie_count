@@ -53,9 +53,18 @@ Documentation is available at https://hexann666.github.io/calorie_count/
 
 First you will provide your height, weight and age and calculate your Basal Metabolic Rate, the number of calories required to keep your body functioning at rest.
 
-After choosing your usual level of activity the Active Metabolic Rate, the number of calories that we consume on a daily basis depending on our height, gender, age, weight and entered activity level whilst maintaining current weight, will be calculated.
+After choosing your usual level of activity the Active Metabolic Rate, the number of calories that we consume on a daily basis depending on our height, gender, age, weight and entered activity level whilst maintaining current weight, will be calculated. Output of the function should be stored in a variable to pass it to the next function.
 
 Than you will be asked to type in the activity you were doing today. If there are more than one activities matching your input, you will select one from the lst that matches your search pattern. Additionally you will enter the time you were doing this activity.
+
+`import calorie_count.core as cc`
+
+`body_parameters = cc.input_body_parameters()`
+
+`cc.calculate_bmr_amr(body_parameters)`
+
+`cc.calculate_burned_calories(body_parameters)`
+
 
 source for the formulas:    https://www.verywellfit.com/how-many-calories-do-i-need-each-day-2506873
 

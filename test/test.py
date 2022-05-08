@@ -35,7 +35,6 @@ class testFile(unittest.TestCase):
         """
         mets = pd.read_csv('data/met_list_activities.csv',
                             sep=';', 
-                            #encoding='ANSI', 
                             decimal=',')
         self.assertEqual(
             float(mets[mets['SPECIFIC MOTION'] == 'bicycling, mountain, uphill, vigorous']['METs']),
