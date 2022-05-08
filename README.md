@@ -57,13 +57,13 @@ After choosing your usual level of activity the Active Metabolic Rate, the numbe
 
 Than you will be asked to type in the activity you were doing today. If there are more than one activities matching your input, you will select one from the lst that matches your search pattern. Additionally you will enter the time you were doing this activity.
 
-`import calorie_count.core as cc
+`import calorie_count.core as cc`
 
-body_parameters = cc.input_body_parameters()
+`body_parameters = cc.input_body_parameters()`
 
-cc.calculate_bmr_amr(body_parameters)
+`cc.calculate_bmr_amr(body_parameters)`
 
-cc.calculate_burned_calories(body_parameters)`
+`cc.calculate_burned_calories(body_parameters)`
 
 
 source for the formulas:    https://www.verywellfit.com/how-many-calories-do-i-need-each-day-2506873

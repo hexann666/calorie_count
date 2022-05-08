@@ -8,11 +8,13 @@ def input_body_parameters():
     returns a dictionary with user input of body parameters: height, weight, age, gender and activity level
 
     Raises:
+
         AssertError: if inputs of type int are negative
 
         AssertError: if inputs of type string are not 'w' or 'm'
 
     Return:
+
         dict
         a dictionary with body parameters as keys and their values as values
     """
@@ -58,10 +60,12 @@ def calculate_bmr_amr(body_parameters):
     returns basal metabolic rate (bmr) and active metabolic rate (amr)
 
     Parameters:
+
         body_parameters: dict
         dictionary with body parameters as keys and their values as values
 
     Returns:
+
         float
         basal metabolic rate (bmr)
 
@@ -96,10 +100,12 @@ def calculate_burned_calories(body_parameters):
     Calories burned during rest of the day are calculated with standard MET of 1.2.
 
     Parameters:
+
         body_parameters: dict
         dictionary with body parameters as keys and their values as values
 
     Returns:
+
         float
         amount of calories burned during activity
 

@@ -54,15 +54,17 @@ source for the MET values:  <a href="https://golf.procon.org/met-values-for-800-
 <h4 id="input_body_parameters" class="doc_header"><code>input_body_parameters</code><a href="https://github.com/hexann666/calorie_count/tree/branch/calorie_count/core.py#L6" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>input_body_parameters</code>()</p>
 </blockquote>
 <p>returns a dictionary with user input of body parameters: height, weight, age, gender and activity level</p>
-<p>Raises:
-    AssertError: if inputs of type int are negative</p>
+<p>Raises:</p>
 
-<pre><code>AssertError: if inputs of type string are not 'w' or 'm'
+<pre><code>AssertError: if inputs of type int are negative
+
+AssertError: if inputs of type string are not 'w' or 'm'
 
 </code></pre>
-<p>Return:
-    dict
-    a dictionary with body parameters as keys and their values as values</p>
+<p>Return:</p>
+
+<pre><code>dict
+a dictionary with body parameters as keys and their values as values</code></pre>
 
 </div>
 
@@ -85,17 +87,21 @@ source for the MET values:  <a href="https://golf.procon.org/met-values-for-800-
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="calculate_bmr_amr" class="doc_header"><code>calculate_bmr_amr</code><a href="https://github.com/hexann666/calorie_count/tree/branch/calorie_count/core.py#L56" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>calculate_bmr_amr</code>(<strong><code>body_parameters</code></strong>)</p>
+<h4 id="calculate_bmr_amr" class="doc_header"><code>calculate_bmr_amr</code><a href="https://github.com/hexann666/calorie_count/tree/branch/calorie_count/core.py#L58" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>calculate_bmr_amr</code>(<strong><code>body_parameters</code></strong>)</p>
 </blockquote>
 <p>returns basal metabolic rate (bmr) and active metabolic rate (amr)</p>
-<p>Parameters:
-    body_parameters: dict
-    dictionary with body parameters as keys and their values as values</p>
-<p>Returns:
-    float
-    basal metabolic rate (bmr)</p>
+<p>Parameters:</p>
+
+<pre><code>body_parameters: dict
+dictionary with body parameters as keys and their values as values
+
+</code></pre>
+<p>Returns:</p>
 
 <pre><code>float
+basal metabolic rate (bmr)
+
+float
 active metabolic rate (amr)</code></pre>
 
 </div>
@@ -119,21 +125,25 @@ active metabolic rate (amr)</code></pre>
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="calculate_burned_calories" class="doc_header"><code>calculate_burned_calories</code><a href="https://github.com/hexann666/calorie_count/tree/branch/calorie_count/core.py#L89" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>calculate_burned_calories</code>(<strong><code>body_parameters</code></strong>)</p>
+<h4 id="calculate_burned_calories" class="doc_header"><code>calculate_burned_calories</code><a href="https://github.com/hexann666/calorie_count/tree/branch/calorie_count/core.py#L93" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>calculate_burned_calories</code>(<strong><code>body_parameters</code></strong>)</p>
 </blockquote>
 <p>Returns the amount of calories burned during activity and during the day apart of activity.</p>
 <p>To calculate calories for specific activity its MET value is chosen from the table.
 To assign MET user should type in the name of her activity for the search.
 If user doesn't provide this information, activity is considered to be standing and light effort with MET of 1.4
 Calories burned during rest of the day are calculated with standard MET of 1.2.</p>
-<p>Parameters:
-    body_parameters: dict
-    dictionary with body parameters as keys and their values as values</p>
-<p>Returns:
-    float
-    amount of calories burned during activity</p>
+<p>Parameters:</p>
+
+<pre><code>body_parameters: dict
+dictionary with body parameters as keys and their values as values
+
+</code></pre>
+<p>Returns:</p>
 
 <pre><code>float
+amount of calories burned during activity
+
+float
 amount of calories burned during the day apart of activity</code></pre>
 
 </div>
