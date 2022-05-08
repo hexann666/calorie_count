@@ -70,10 +70,10 @@ nb_path: "index.ipynb"
 <h2 id="How-to-use">How to use<a class="anchor-link" href="#How-to-use"> </a></h2><p>First you will provide your height, weight and age and calculate your Basal Metabolic Rate, the number of calories required to keep your body functioning at rest.</p>
 <p>After choosing your usual level of activity the Active Metabolic Rate, the number of calories that we consume on a daily basis depending on our height, gender, age, weight and entered activity level whilst maintaining current weight, will be calculated. Output of the function should be stored in a variable to pass it to the next function.</p>
 <p>Than you will be asked to type in the activity you were doing today. If there are more than one activities matching your input, you will select one from the lst that matches your search pattern. Additionally you will enter the time you were doing this activity.</p>
-<p><code>import calorie_count.core as cc</code></p>
-<p><code>body_parameters = cc.input_body_parameters()</code></p>
-<p><code>cc.calculate_bmr_amr(body_parameters)</code></p>
-<p><code>cc.calculate_burned_calories(body_parameters)</code></p>
+<p>`import calorie_count.core as cc</p>
+<p>body_parameters = cc.input_body_parameters()</p>
+<p>cc.calculate_bmr_amr(body_parameters)</p>
+<p>cc.calculate_burned_calories(body_parameters)`</p>
 <p>source for the formulas:    <a href="https://www.verywellfit.com/how-many-calories-do-i-need-each-day-2506873">https://www.verywellfit.com/how-many-calories-do-i-need-each-day-2506873</a></p>
 <p>source for the MET values:  <a href="https://golf.procon.org/met-values-for-800-activities/">https://golf.procon.org/met-values-for-800-activities/</a></p>
 

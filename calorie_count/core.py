@@ -7,12 +7,14 @@ def input_body_parameters():
     """
     returns a dictionary with user input of body parameters: height, weight, age, gender and activity level
 
-    Raises: AssertError: if inputs of type int are negative
+    Raises:
+        AssertError: if inputs of type int are negative
 
-            AssertError: if inputs of type string are not 'w' or 'm'
+        AssertError: if inputs of type string are not 'w' or 'm'
 
-    Return: dict
-            a dictionary with body parameters as keys and their values as values
+    Return:
+        dict
+        a dictionary with body parameters as keys and their values as values
     """
     message_activity_level = 'Please choose your level of activity:\
                 \n1 - little to no exercise \
@@ -55,14 +57,16 @@ def calculate_bmr_amr(body_parameters):
     """
     returns basal metabolic rate (bmr) and active metabolic rate (amr)
 
-    Parameters: body_parameters: dict
-                dictionary with body parameters as keys and their values as values
+    Parameters:
+        body_parameters: dict
+        dictionary with body parameters as keys and their values as values
 
-    Returns: float
-            basal metabolic rate (bmr)
+    Returns:
+        float
+        basal metabolic rate (bmr)
 
-            float
-            active metabolic rate (amr)
+        float
+        active metabolic rate (amr)
     """
     dict_activity = {1:1.2, 2:1.37, 3:1.55, 4:1.725, 6:1.9}
 
@@ -91,14 +95,16 @@ def calculate_burned_calories(body_parameters):
     If user doesn't provide this information, activity is considered to be standing and light effort with MET of 1.4
     Calories burned during rest of the day are calculated with standard MET of 1.2.
 
-    Parameters: body_parameters: dict
-                dictionary with body parameters as keys and their values as values
+    Parameters:
+        body_parameters: dict
+        dictionary with body parameters as keys and their values as values
 
-    Returns: float
-            amount of calories burned during activity
+    Returns:
+        float
+        amount of calories burned during activity
 
-            float
-            amount of calories burned during the day apart of activity
+        float
+        amount of calories burned during the day apart of activity
     """
     import pandas as pd
 
