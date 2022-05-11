@@ -10,6 +10,6 @@ modules = ["core.py"]
 
 doc_url = "https://hexann666.github.io/calorie_count/"
 
-git_url = "https://github.com/hexann666/calorie_count/tree/branch/"
+git_url = "https://github.com/hexann666/calorie_count/blob/master/"
 
 def custom_doc_links(name): return None

@@ -65,7 +65,16 @@ Than you will be asked to type in the activity you were doing today. If there ar
 
 `cc.calculate_burned_calories(body_parameters)`
 
+**Note 1**
 
-source for the formulas:    https://www.verywellfit.com/how-many-calories-do-i-need-each-day-2506873
+Pip is doing canonicalization while processing Setup.py to a package and automatically changes dots and underscore to dashes. That's why during installation the name of the package is shown as calorie-count and calorie-count-version-nr, although in all the documentation the name of the package is specified as calorie_count.
 
-source for the MET values:  https://golf.procon.org/met-values-for-800-activities/
+**Note 2**
+
+Currently there is a bug in nbdev, when it generates links to the GitHub sourc files from documentation on the GitPages, so it leads to an non-existent link to core.py instead of https://github.com/hexann666/calorie_count/blob/master/calorie_count/core.py. The link specified in settings.ini in git_url is not converted properly.
+
+**Sources:**
+
+for the formulas:    https://www.verywellfit.com/how-many-calories-do-i-need-each-day-2506873
+
+for the MET values:  https://golf.procon.org/met-values-for-800-activities/
