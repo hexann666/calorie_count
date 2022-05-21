@@ -12,6 +12,9 @@ _tmp*
 tmp*
 tags
 
+# app.ipynb is required only for development
+app.ipynb
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
