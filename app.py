@@ -11,54 +11,47 @@ footer {visibility: hidden;}
 
 st.sidebar.markdown("# Calorie count")
 st.sidebar.markdown('First you will provide your height, weight and age and calculate your Basal Metabolic Rate, the number of calories required to keep your body functioning at rest.')
-st.sidebar.markdown('After choosing your usual level of activity the Active Metabolic Rate, the number of calories that we consume on a daily basis depending on our height, gender, age, weight and entered activity level whilst maintaining current weight, will be calculated. Output of the function should be stored in a variable to pass it to the next function.')
+st.sidebar.markdown('After choosing your usual level of activity the Active Metabolic Rate, the number of calories that we consume on a daily basis depending on our height, gender, age, weight and entered activity level whilst maintaining current weight, will be calculated.')
 st.sidebar.markdown('To calculate daily energy expenditure type in the activity you were doing today and choose the row number of activity from the list that matches your search pattern. Additionally you will enter the time you were doing this activity.')
 st.image('https://raw.githubusercontent.com/hexann666/calorie_count/master/data/image_title.JPG')
 
-message_activity_level = 'Please choose your level of activity:\
-                \n1 - little to no exercise \
+message_activity_level = '1 - little to no exercise \
                 \n2 - light exercise 1–3 days a week \
                 \n3 - moderate exercise 3–5 days a week \
                 \n4 - hard exercises 6–7 days a week \
                 \n5 - physically demanding job or particularly challenging exercise routine'
-message_dict = {'height': 'Input height in cm',
-                'weight': 'Input weight in kg',
-                'age': 'Input age in full years',
-                'gender': 'Input biological gender as w or m',
-                'activity': message_activity_level} 
 
 body_params = {}
 
-col1, col2, col3 = st.columns(3)
+col1, col2, col3, col4 = st.columns(4)
 
 with col1:
-        body_params['height'] = st.number_input('Input height in cm', min_value=1)
+    body_params['height'] = st.number_input('Height in cm', min_value=1)
 
 with col2:
-        body_params['weight'] = st.number_input('Input weight in kg', min_value=1)
+    body_params['weight'] = st.number_input('Weight in kg', min_value=1)
     
 with col3:
-        body_params['age'] = st.number_input('Input age in years', min_value=1)
+    body_params['age'] = st.number_input('Age in years', min_value=1)
 
-body_params['gender'] = st.text_input('Input biological gender as w or m')
-st.markdown('Activity levels:\
-                \n1 - little to no exercise \
-                \n2 - light exercise 1–3 days a week \
-                \n3 - moderate exercise 3–5 days a week \
-                \n4 - hard exercises 6–7 days a week \
-                \n5 - physically demanding job or particularly challenging exercise routine')
+with col4:
+    body_params['gender'] = st.text_input('Biological gender w/m', max_chars=1)
+
+with st.expander("See activity levels"):
+    st.markdown(message_activity_level)
+
 body_params['activity'] = st.selectbox(label='Select your activity level', options=[1, 2, 3, 4, 5], index=0)
-#submit_button1 = st.form_submit_button(label='Submit')
+
+st.write("You entered following body parameters:")
+st.write(body_params)
+st.write("You can correct your input by changing it in the corresponding field and pressing Enter")
+
 
 if st.button('Calculate bmr'):
-    st.write("You entered following body parameters:\n")
-    st.write(body_params)
-    st.write("You can correct your input by changing it in the corresponding field and pressing Enter")
-
     bmr, amr = cc.calculate_bmr_amr(body_params)
     st.write(f"Your BMR is {bmr:.0f}")
     st.write(f"Your AMR is {amr:.0f}")
-    st.text('\n\n')
+    st.text('\n')
 
 #my_expander = st.expander(label='Calculate energy expenditure')
   

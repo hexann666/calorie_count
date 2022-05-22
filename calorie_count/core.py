@@ -52,6 +52,7 @@ def input_body_parameters():
         body_params[param] = body_params[param]
 
         print(f'Your {param} is {body_params[param]}')
+    logger.info('user input complete')
     return body_params
 
 
@@ -84,7 +85,7 @@ def calculate_bmr_amr(body_parameters):
             (6.755 * body_parameters['age']))
 
     amr = bmr * dict_activity[body_parameters['activity']]
-
+    logger.info('calculate_bmr_amr complete')
     print(f'\nYour BMR is {bmr:.1f}')
     print(f'To stay at your current weight you need to consume {amr:.0f} calories')
     return bmr, amr
@@ -148,6 +149,7 @@ def calculate_burned_calories(body_parameters):
 
     burned_cal = met * body_parameters['weight'] * time/60
     bmr_cal = 1.2 * body_parameters['weight'] * (24 - time / 60)
+    logger.info('calculate_burned_calories complete')
     print(f'\nDuring {time} min of {activity} you burned {burned_cal:.0f} kcal.')
     print(f'Your total daily energy expenditure was {round((burned_cal + bmr_cal), 2):.0f} kcal today')
     return burned_cal, bmr_cal
