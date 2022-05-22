@@ -4,11 +4,6 @@ import pandas as pd
 
 st.set_page_config(page_title='Calorie count', page_icon='🖖')
 
-st.markdown(""" <style>
-#MainMenu {visibility: hidden;}
-footer {visibility: hidden;}
-</style> """, unsafe_allow_html=True)
-
 st.sidebar.markdown("# Calorie count")
 st.sidebar.markdown('First you will provide your height, weight and age and calculate your Basal Metabolic Rate, the number of calories required to keep your body functioning at rest.')
 st.sidebar.markdown('After choosing your usual level of activity the Active Metabolic Rate, the number of calories that we consume on a daily basis depending on our height, gender, age, weight and entered activity level whilst maintaining current weight, will be calculated.')
