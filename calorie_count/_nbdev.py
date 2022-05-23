@@ -2,7 +2,9 @@
 
 __all__ = ["index", "modules", "custom_doc_links", "git_url"]
 
-index = {"input_body_parameters": "00_core.ipynb",
+index = {"setup_logger": "00_core.ipynb",
+         "logger": "00_core.ipynb",
+         "input_body_parameters": "00_core.ipynb",
          "calculate_bmr_amr": "00_core.ipynb",
          "calculate_burned_calories": "00_core.ipynb"}
 

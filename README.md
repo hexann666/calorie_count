@@ -20,7 +20,7 @@ Documentation is available at https://hexann666.github.io/calorie_count/
 - unit tests
 - pip package
 
-### Release 2 (to define)
+### Release 2
 
 - Web-Application with Streamlit (Web-UI)
 
