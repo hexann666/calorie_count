@@ -12,9 +12,6 @@ entries:
     - output: web,pdf
       title: Calorie counter
       url: core.html
-    - output: web,pdf
-      title: Title
-      url: app.html
     output: web
     title: calorie_count
   output: web
