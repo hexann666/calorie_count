@@ -12,23 +12,22 @@ Documentation is available at https://hexann666.github.io/calorie_count/
 
 ## Releases (defined according to the Lab's formal requirements)
 
-### Release 1:
+### Release 1
 
 - git repository available on GitLab/Hub
 - git structure with readme, docs, tests
 - documentation
 - unit tests
-- docker container
 - pip package
 
 ### Release 2 (to define)
 
-- Web-Application with Streamlit (Web-UI) (alternatively Flask or FastAPI)*
+- Web-Application with Streamlit (Web-UI)
 
 ### Release 3 (to define)
 
-- Webscraper - (get data)
-- Data bank ("Datawarehouse") 
+- Data bank with Notion ("Datawarehouse") 
+- docker container
 - (Optional) Kubernetes (eg. Okteto)
 - (Optional) Worfklow in MLops-Stil
 

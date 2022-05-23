@@ -51,65 +51,7 @@ source for the MET values:  <a href="https://golf.procon.org/met-values-for-800-
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="setup_logger" class="doc_header"><code>setup_logger</code><a href="https://github.com/hexann666/calorie_count/blob/master/calorie_count/core.py#L8" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>setup_logger</code>(<strong><code>loggerName</code></strong>=<em><code>'calorie_count_logger'</code></em>, <strong><code>logFile</code></strong>=<em><code>'log/calorie_count.log'</code></em>)</p>
-</blockquote>
-<p>Returns a logger with the specified name or "calorie_count_logger", if loggerName is None.
-Generated logs will be stored in the specified file or in log/calorie_count.log, if logFile is None</p>
-<p>Parameters:</p>
-
-<pre><code>loggerName: string
-a name for logger, that is used in getLogger
-
-logFile: string
-file name, where logs are stored
-
-</code></pre>
-<p>Return:</p>
-
-<pre><code>logger
-logger used in the calorie_count functions
-
-
-</code></pre>
-<p>logger = logging.getLogger(loggerName)
-logger.setLevel(logging.DEBUG)
-fh = logging.FileHandler(logFile)
-formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s',
-                    datefmt='%Y/%m/%d %I:%M:%S')
-fh.setLevel(logging.DEBUG)
-fh.setFormatter(formatter)
-logger.addHandler(fh)
-return logger</p>
-
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-    {% endraw %}
-
-    {% raw %}
-    
-<div class="cell border-box-sizing code_cell rendered">
-
-</div>
-    {% endraw %}
-
-    {% raw %}
-    
-<div class="cell border-box-sizing code_cell rendered">
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-<div class="output_markdown rendered_html output_subarea ">
-<h4 id="input_body_parameters" class="doc_header"><code>input_body_parameters</code><a href="https://github.com/hexann666/calorie_count/blob/master/calorie_count/core.py#L42" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>input_body_parameters</code>()</p>
+<h4 id="input_body_parameters" class="doc_header"><code>input_body_parameters</code><a href="https://github.com/hexann666/calorie_count/blob/master/calorie_count/core.py#L6" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>input_body_parameters</code>()</p>
 </blockquote>
 <p>returns a dictionary with user input of body parameters: height, weight, age, gender and activity level</p>
 <p>Raises:</p>
@@ -145,7 +87,7 @@ a dictionary with body parameters as keys and their values as values</code></pre
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="calculate_bmr_amr" class="doc_header"><code>calculate_bmr_amr</code><a href="https://github.com/hexann666/calorie_count/blob/master/calorie_count/core.py#L95" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>calculate_bmr_amr</code>(<strong><code>body_parameters</code></strong>)</p>
+<h4 id="calculate_bmr_amr" class="doc_header"><code>calculate_bmr_amr</code><a href="https://github.com/hexann666/calorie_count/blob/master/calorie_count/core.py#L59" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>calculate_bmr_amr</code>(<strong><code>body_parameters</code></strong>)</p>
 </blockquote>
 <p>returns basal metabolic rate (bmr) and active metabolic rate (amr)</p>
 <p>Parameters:</p>
@@ -183,7 +125,7 @@ active metabolic rate (amr)</code></pre>
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="calculate_burned_calories" class="doc_header"><code>calculate_burned_calories</code><a href="https://github.com/hexann666/calorie_count/blob/master/calorie_count/core.py#L130" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>calculate_burned_calories</code>(<strong><code>body_parameters</code></strong>)</p>
+<h4 id="calculate_burned_calories" class="doc_header"><code>calculate_burned_calories</code><a href="https://github.com/hexann666/calorie_count/blob/master/calorie_count/core.py#L94" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>calculate_burned_calories</code>(<strong><code>body_parameters</code></strong>)</p>
 </blockquote>
 <p>Returns the amount of calories burned during activity and during the day apart of activity.</p>
 <p>To calculate calories for specific activity its MET value is chosen from the table.
