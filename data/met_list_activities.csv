@@ -17,9 +17,9 @@ bicycling;bicycling, > 20 mph, racing, not drafting;15,80
 bicycling;bicycling, 12 mph, seated, hands on brake hoods or bar drops, 80 rpm;8,50
 bicycling;bicycling, 12 mph, standing, hands on brake hoods, 60 rpm;9,00
 bicycling;unicycling;5,00
-conditioning exercise;activity promoting video game (e.g., Wii Fit), light effort (e.g., balance, yoga);2,30
-conditioning exercise;activity promoting video game (e.g., Wii Fit), moderate effort (e.g., aerobic, resistance);3,80
-conditioning exercise;activity promoting video/arcade game (e.g., Exergaming, Dance Dance Revolution), vigorous effort;7,20
+conditioning exercise;activity promoting video game, e.g., Wii Fit, light effort, e.g., balance, yoga;2,30
+conditioning exercise;activity promoting video game, e.g., Wii Fit, moderate effort, e.g., aerobic, resistance;3,80
+conditioning exercise;activity promoting video/arcade game, e.g., Exergaming, Dance Dance Revolution, vigorous effort;7,20
 conditioning exercise;army type obstacle course exercise, boot camp training program;5,00
 conditioning exercise;bicycling, stationary, general;7,00
 conditioning exercise;bicycling, stationary, 30-50 watts, very light to light effort;3,50
@@ -29,17 +29,17 @@ conditioning exercise;bicycling, stationary, 161-200 watts, vigorous effort;11,0
 conditioning exercise;bicycling, stationary, 201-270 watts, very vigorous effort;14,00
 conditioning exercise;bicycling, stationary, 51-89 watts, light-to-moderate effort;4,80
 conditioning exercise;bicycling, stationary, RPM/Spin bike class;8,50
-conditioning exercise;calisthenics (e.g., push ups, sit ups, pull-ups, jumping jacks), vigorous effort;8,00
-conditioning exercise;calisthenics (e.g., push ups, sit ups, pull-ups, lunges), moderate effort;3,80
-conditioning exercise;calisthenics (e.g., situps, abdominal crunches), light effort;2,80
-conditioning exercise;calisthenics, light or moderate effort, general (e.g., back exercises), going up & down from floor ( 150);3,50
+conditioning exercise;calisthenics, e.g., push ups, sit ups, pull-ups, jumping jacks, vigorous effort;8,00
+conditioning exercise;calisthenics, e.g., push ups, sit ups, pull-ups, lunges, moderate effort;3,80
+conditioning exercise;calisthenics, e.g., situps, abdominal crunches, light effort;2,80
+conditioning exercise;calisthenics, light or moderate effort, general, e.g., back exercises, going up & down from floor,  150;3,50
 conditioning exercise;circuit training, moderate effort;4,30
 conditioning exercise;circuit training, including kettlebells, some aerobic movement with minimal rest, general, vigorous intensity;8,00
 conditioning exercise;CurvesTM exercise routines in women;3,50
 conditioning exercise;Elliptical trainer, moderate effort;5,00
-conditioning exercise;resistance training (weight lifting, free weight, nautilus or universal), power lifting or body building, vigorous effort;6,00
-conditioning exercise;resistance (weight) training, squats , slow or explosive effort;5,00
-conditioning exercise;resistance (weight) training, multiple exercises, 8-15 repetitions at varied resistance;3,50
+conditioning exercise;resistance training, weight lifting, free weight, nautilus or universal, power lifting or body building, vigorous effort;6,00
+conditioning exercise;resistance, weight training, squats, slow or explosive effort;5,00
+conditioning exercise;resistance, weight training, multiple exercises, 8-15 repetitions at varied resistance;3,50
 conditioning exercise;health club exercise, general;5,50
 conditioning exercise;health club exercise classes, general, gym/weight training combined in one visit;5,00
 conditioning exercise;health club exercise, conditioning classes;7,80
@@ -56,21 +56,21 @@ conditioning exercise;slide board exercise, general;11,00
 conditioning exercise;slimnastics, jazzercise;6,00
 conditioning exercise;stretching, mild;2,30
 conditioning exercise;pilates, general;3,00
-conditioning exercise;teaching exercise class (e.g., aerobic, water);6,80
+conditioning exercise;teaching exercise class, e.g., aerobic, water;6,80
 conditioning exercise;therapeutic exercise ball, Fitball exercise;2,80
 conditioning exercise;upper body exercise, arm ergometer;2,80
-conditioning exercise;upper body exercise, stationary bicycle – Airdyne (arms only) 40 rpm, moderate;4,30
+conditioning exercise;upper body exercise, stationary bicycle – Airdyne, arms only 40 rpm, moderate;4,30
 conditioning exercise;water aerobics, water calisthenics, water exercise;5,30
 conditioning exercise;whirlpool, sitting;1,30
-conditioning exercise;video exercise workouts, TV conditioning programs (e.g., yoga, stretching), light effort;2,30
-conditioning exercise;video exercise workouts, TV conditioning programs (e.g., cardio-resistance), moderate effort;4,00
-conditioning exercise;video exercise workouts, TV conditioning programs (e.g., cardio-resistance), vigorous effort;6,00
+conditioning exercise;video exercise workouts, TV conditioning programs, e.g., yoga, stretching, light effort;2,30
+conditioning exercise;video exercise workouts, TV conditioning programs, e.g., cardio-resistance, moderate effort;4,00
+conditioning exercise;video exercise workouts, TV conditioning programs, e.g., cardio-resistance, vigorous effort;6,00
 conditioning exercise;yoga, Hatha;2,50
 conditioning exercise;yoga, Power;4,00
 conditioning exercise;yoga, Nadisodhana;2,00
 conditioning exercise;yoga, Surya Namaskar;3,30
-conditioning exercise;native New Zealander physical activities (e.g., Haka Powhiri, Moteatea, Waita Tira, Whakawatea, etc.), general, moderate effort;5,30
-conditioning exercise;native New Zealander physical activities (e.g., Haka, Taiahab), general, vigorous effort;6,80
+conditioning exercise;native New Zealander physical activities, e.g., Haka Powhiri, Moteatea, Waita Tira, Whakawatea, etc., general, moderate effort;5,30
+conditioning exercise;native New Zealander physical activities, e.g., Haka, Taiahab, general, vigorous effort;6,80
 dancing;ballet, modern, or jazz, general, rehearsal or class;5,00
 dancing;ballet, modern, or jazz, performance, vigorous effort;6,80
 dancing;tap;4,80
@@ -82,13 +82,13 @@ dancing;bench step class, general;8,50
 dancing;aerobic, low impact;5,00
 dancing;aerobic, high impact;7,30
 dancing;aerobic dance wearing 10-15 lb weights;10,00
-dancing;ethnic or cultural dancing (e.g., Greek, Middle Eastern, hula, salsa, merengue, bamba y plena, flamenco, belly, and swing);4,50
+dancing;ethnic or cultural dancing, e.g., Greek, Middle Eastern, hula, salsa, merengue, bamba y plena, flamenco, belly, and swing;4,50
 dancing;ballroom, fast;5,50
-dancing;general dancing (e.g., disco, folk, Irish step dancing, line dancing, polka, contra, country);7,80
+dancing;general dancing, e.g., disco, folk, Irish step dancing, line dancing, polka, contra, country;7,80
 dancing;ballroom dancing, competitive, general;11,30
-dancing;ballroom, slow (e.g., waltz, foxtrot, slow dancing, samba, tango, 19th century dance, mambo, cha cha);3,00
+dancing;ballroom, slow, e.g., waltz, foxtrot, slow dancing, samba, tango, 19th century dance, mambo, cha cha;3,00
 dancing;Anishinaabe Jingle Dancing;5,50
-dancing;Caribbean dance (Abakua, Beguine, Bellair, Bongo, Brukin’s, Caribbean Quadrills, Dinki Mini, Gere, Gumbay, Ibo, Jonkonnu, Kumina, Oreisha, Jambu);3,50
+dancing;Caribbean dance, Abakua, Beguine, Bellair, Bongo, Brukin’s, Caribbean Quadrills, Dinki Mini, Gere, Gumbay, Ibo, Jonkonnu, Kumina, Oreisha, Jambu;3,50
 fishing and hunting;fishing, general;3,50
 fishing and hunting;fishing, crab fishing;4,50
 fishing and hunting;fishing, catching fish with hands;4,00
@@ -124,7 +124,7 @@ fishing and hunting;rifle exercises, shooting, kneeling or standing;2,50
 home activities;cleaning, sweeping carpet or floors, general;3,30
 home activities;cleaning, sweeping, slow, light effort;2,30
 home activities;cleaning, sweeping, slow, moderateeffort;3,80
-home activities;cleaning, heavy or major (e.g. wash car, wash windows, clean garage), moderate effort;3,50
+home activities;cleaning, heavy or major, e.g. wash car, wash windows, clean garage, moderate effort;3,50
 home activities;cleaning, mopping, standing, moderate effort;3,50
 home activities;cleaning windows, washing windows, general;3,20
 home activities;mopping, standing, light effort;2,50
@@ -134,9 +134,9 @@ home activities;multiple household tasks all at once, moderate effort;3,50
 home activities;multiple household tasks all at once, vigorous effort;4,30
 home activities;cleaning, house or cabin, general, moderate effort;3,30
 home activities;dusting or polishing furniture, general;2,30
-home activities;kitchen activity, general, (e.g., cooking, washing dishes, cleaning up), moderate effort;3,30
-home activities;cleaning, general (straightening up, changing linen, carrying out trash, light effort;2,50
-home activities;wash dishes, standing or in general (not broken into stand/walk components);1,80
+home activities;kitchen activity, general,, e.g., cooking, washing dishes, cleaning up, moderate effort;3,30
+home activities;cleaning, general, straightening up, changing linen, carrying out trash, light effort;2,50
+home activities;wash dishes, standing or in general, not broken into stand/walk components;1,80
 home activities;wash dishes, clearing dishes from table, walking, light effort;2,50
 home activities;vacuuming, general, moderate effort;3,30
 home activities;butchering animals, small;3,00
@@ -144,11 +144,11 @@ home activities;butchering animal, large, vigorous effort;6,00
 home activities;cutting and smoking fish, drying fish or meat;2,30
 home activities;tanning hides, general;4,00
 home activities;cooking or food preparation, moderate effort;3,50
-home activities;cooking or food preparation – standing or sitting or in general (not broken into stand/walk components), manual appliances, light effort;2,00
+home activities;cooking or food preparation – standing or sitting or in general, not broken into stand/walk components, manual appliances, light effort;2,00
 home activities;serving food, setting table, implied walking or standing;2,50
 home activities;cooking or food preparation, walking;2,50
 home activities;feeding household animals;2,50
-home activities;putting away groceries (e.g. carrying groceries, shopping without a grocery cart), carrying packages;2,50
+home activities;putting away groceries, e.g. carrying groceries, shopping without a grocery cart, carrying packages;2,50
 home activities;carrying groceries upstairs;7,50
 home activities;cooking Indian bread on an outside stove;3,00
 home activities;food shopping with or without a grocery cart, standing or walking;2,30
@@ -160,7 +160,7 @@ home activities;laundry, fold or hang clothes, put clothes in washer or dryer, p
 home activities;laundry, hanging wash, washing clothes by hand, moderate effort;4,00
 home activities;laundry, putting away clothes, gathering clothes to pack, putting away laundry, implied walking;2,30
 home activities;making bed, changing linens;3,30
-home activities;maple syruping/sugar bushing (including carrying buckets, carrying wood);5,00
+home activities;maple syruping/sugar bushing, including carrying buckets, carrying wood;5,00
 home activities;moving furniture, household items, carrying boxes;5,80
 home activities;moving, lifting light loads;5,00
 home activities;organizing room;4,80
@@ -173,18 +173,18 @@ home activities;implied walking, putting away household items, moderate effort;3
 home activities;watering plants;2,50
 home activities;building a fire inside;2,50
 home activities;moving household items upstairs, carrying boxes or furniture;9,00
-home activities;standing, light effort tasks (pump gas, change light bulb, etc.);2,00
-home activities;walking, moderate effort tasks, non-cleaning (readying to leave, shut/lock doors, close windows, etc.);3,50
-home activities;sitting, playing with child(ren), light effort, only active periods;2,20
-home activities;standing, playing with child(ren) light effort, only active periods;2,80
-home activities;walking/running, playing with child(ren), moderate effort, only active periods;3,50
-home activities;walking/running, playing with child(ren), vigorous effort, only active periods;5,80
+home activities;standing, light effort tasks, pump gas, change light bulb, etc.;2,00
+home activities;walking, moderate effort tasks, non-cleaning, readying to leave, shut/lock doors, close windows, etc.;3,50
+home activities;sitting, playing with children, light effort, only active periods;2,20
+home activities;standing, playing with children, light effort, only active periods;2,80
+home activities;walking/running, playing with children, moderate effort, only active periods;3,50
+home activities;walking/running, playing with children, vigorous effort, only active periods;5,80
 home activities;walking and carrying small child, child weighing 15 lbs or more;3,00
 home activities;walking and carrying small child, child weighing less than 15 lbs;2,30
 home activities;standing, holding child;2,00
 home activities;child care, infant, general;2,50
-home activities;child care, sitting/kneeling (e.g., dressing, bathing, grooming, feeding, occasional lifting of child), light effort, general;2,00
-home activities;child care, standing (e.g., dressing, bathing, grooming, feeding, occasional lifting of child), moderate effort;3,00
+home activities;child care, sitting/kneeling, e.g., dressing, bathing, grooming, feeding, occasional lifting of child, light effort, general;2,00
+home activities;child care, standing, e.g., dressing, bathing, grooming, feeding, occasional lifting of child, moderate effort;3,00
 home activities;reclining with baby;1,50
 home activities;breastfeeding, sitting or reclining;2,00
 home activities;sit, playing with animals, light effort, only active periods;2,50
@@ -234,13 +234,13 @@ home repair;washing and waxing car;2,00
 home repair;washing fence, painting fence, moderate effort;4,50
 home repair;wiring, tapping-splicing;3,30
 inactivity quiet/light;lying quietly and watching television;1,00
-inactivity quiet/light;lying quietly, doing nothing, lying in bed awake, listening to music (not talking or reading);1,30
+inactivity quiet/light;lying quietly, doing nothing, lying in bed awake, listening to music, not talking or reading;1,30
 inactivity quiet/light;sitting quietly and watching television;1,30
 inactivity quiet/light;sitting quietly, general;1,30
 inactivity quiet/light;sitting quietly, fidgeting, general, fidgeting hands;1,50
 inactivity quiet/light;sitting, fidgeting feet;1,80
 inactivity quiet/light;sitting, smoking;1,30
-inactivity quiet/light;sitting, listening to music (not talking or reading) or watching a movie in a theater;1,50
+inactivity quiet/light;sitting, listening to music, not talking or reading or watching a movie in a theater;1,50
 inactivity quiet/light;sitting at a desk, resting head in hands;1,30
 inactivity quiet/light;sleeping;0,95
 inactivity quiet/light;standing quietly, standing in a line;1,30
@@ -334,7 +334,7 @@ music playing;cello, sitting;2,30
 music playing;conducting orchestra, standing;2,30
 music playing;double bass, standing;2,50
 music playing;drums, sitting;3,80
-music playing;drumming (e.g., bongo, conga, benbe), moderate, sitting;3,00
+music playing;drumming, e.g., bongo, conga, benbe, moderate, sitting;3,00
 music playing;flute, sitting;2,00
 music playing;horn, standing;1,80
 music playing;piano, sitting;2,30
@@ -359,7 +359,7 @@ occupation;building road, directing traffic, standing;2,00
 occupation;carpentry, general, light effort;2,50
 occupation;carpentry, general, moderate effort;4,30
 occupation;carpentry, general, heavy or vigorous effort;7,00
-occupation;carrying heavy loads (e.g., bricks, tools);8,00
+occupation;carrying heavy loads, e.g., bricks, tools;8,00
 occupation;carrying moderate loads up stairs, moving boxes 25-49 lbs;8,00
 occupation;chambermaid, hotel housekeeper, making bed, cleaning bathroom, pushing cart;4,00
 occupation;coal mining, drilling coal, rock;5,30
@@ -367,19 +367,19 @@ occupation;coal mining, erecting supports;5,00
 occupation;coal mining, general;5,50
 occupation;coal mining, shoveling coal;6,30
 occupation;cook, chef;2,50
-occupation;construction, outside, remodeling, new structures (e.g., roof repair, miscellaneous);4,00
-occupation;custodial work, light effort (e.g., cleaning sink and toilet, dusting, vacuuming, light cleaning);2,30
-occupation;custodial work, moderate effort (e.g., electric buffer, feathering arena floors, mopping, taking out trash, vacuuming);3,80
-occupation;electrical work (e.g., hook up wire, tapping-splicing);3,30
-occupation;engineer (e.g., mechanical or electrical);1,80
-occupation;farming, vigorous effort (e.g., baling hay, cleaning barn);7,80
-occupation;farming, moderate effort (e.g., feeding animals, chasing cattle by walking and/or horseback, spreading manure, harvesting crops);4,80
-occupation;farming, light effort (e.g., cleaning animal sheds, preparing animal feed);2,00
-occupation;farming, driving tasks (e.g., driving tractor or harvester);2,80
+occupation;construction, outside, remodeling, new structures, e.g., roof repair, miscellaneous;4,00
+occupation;custodial work, light effort, e.g., cleaning sink and toilet, dusting, vacuuming, light cleaning;2,30
+occupation;custodial work, moderate effort, e.g., electric buffer, feathering arena floors, mopping, taking out trash, vacuuming;3,80
+occupation;electrical work, e.g., hook up wire, tapping-splicing;3,30
+occupation;engineer, e.g., mechanical or electrical;1,80
+occupation;farming, vigorous effort, e.g., baling hay, cleaning barn;7,80
+occupation;farming, moderate effort, e.g., feeding animals, chasing cattle by walking and/or horseback, spreading manure, harvesting crops;4,80
+occupation;farming, light effort, e.g., cleaning animal sheds, preparing animal feed;2,00
+occupation;farming, driving tasks, e.g., driving tractor or harvester;2,80
 occupation;farming, feeding small animals;3,50
 occupation;farming, feeding cattle, horses;4,30
 occupation;farming, hauling water for animals, general hauling water,farming, general hauling water;4,30
-occupation;farming, taking care of animals (e.g., grooming, brushing, shearing sheep, assisting with birthing, medical care, branding), general;4,50
+occupation;farming, taking care of animals, e.g., grooming, brushing, shearing sheep, assisting with birthing, medical care, branding, general;4,50
 occupation;farming, rice, planting, grain milling activities;3,80
 occupation;farming, milking by hand, cleaning pails, moderate effort;3,50
 occupation;farming, milking by machine, light effort;1,30
@@ -393,11 +393,11 @@ occupation;fishing, commercial, vigorous effort;7,00
 occupation;forestry, ax chopping, very fast, 1.25 kg axe, 51 blows/min, extremely vigorous effort;17,50
 occupation;forestry, ax chopping, slow, 1.25 kg axe, 19 blows/min, moderate effort;5,00
 occupation;forestry, ax chopping, fast, 1.25 kg axe, 35 blows/min, vigorous effort;8,00
-occupation;forestry, moderate effort (e.g., sawing wood with power saw, weeding, hoeing);4,50
-occupation;forestry, vigorous effort (e.g., barking, felling, or trimming trees, carrying or stacking logs, planting seeds, sawing lumber by hand);8,00
+occupation;forestry, moderate effort, e.g., sawing wood with power saw, weeding, hoeing;4,50
+occupation;forestry, vigorous effort, e.g., barking, felling, or trimming trees, carrying or stacking logs, planting seeds, sawing lumber by hand;8,00
 occupation;furriery;4,50
 occupation;garbage collector, walking, dumping bins into truck;4,00
-occupation;hairstylist (e.g., plaiting hair, manicure, make-up artist);1,80
+occupation;hairstylist, e.g., plaiting hair, manicure, make-up artist;1,80
 occupation;horse grooming, including feeding, cleaning stalls, bathing, brushing, clipping, longeing and exercising horses;7,30
 occupation;horse, feeding, watering, cleaning stalls, implied walking and lifting loads;4,30
 occupation;horse racing, galloping;7,30
@@ -407,7 +407,7 @@ occupation;kitchen maid;3,00
 occupation;lawn keeper, yard work, general;4,00
 occupation;laundry worker;3,30
 occupation;locksmith;3,00
-occupation;machine tooling (e.g., machining, working sheet metal, machine fitter, operating lathe, welding) light-to-moderate effort;3,00
+occupation;machine tooling, e.g., machining, working sheet metal, machine fitter, operating lathe, welding, light-to-moderate effort;3,00
 occupation;Machine tooling, operating punch press, moderate effort;5,00
 occupation;manager, property;1,80
 occupation;manual or unskilled labor, general, light effort;2,80
@@ -416,7 +416,7 @@ occupation;manual or unskilled labor, general, vigorous effort;6,50
 occupation;masonry, concrete, moderate effort;4,30
 occupation;masonry, concrete, light effort;2,50
 occupation;massage therapist, standing;4,00
-occupation;moving, carrying or pushing heavy objects, 75 lbs or more, only active time (e.g., desks, moving van work);7,50
+occupation;moving, carrying or pushing heavy objects, 75 lbs or more, only active time, e.g., desks, moving van work;7,50
 occupation;skindiving or SCUBA diving as a frogman, Navy Seal;12,00
 occupation;operating heavy duty equipment, automated, not driving;2,50
 occupation;orange grove work, picking fruit;4,50
@@ -433,29 +433,29 @@ occupation;shoveling, digging ditches;7,80
 occupation;shoveling, more than 16 lbs/minute, deep digging, vigorous effort;8,80
 occupation;shoveling, less than 10 lbs/minute, moderate effort;5,00
 occupation;shoveling, 10 to 15 lbs/minute, vigorous effort;6,50
-occupation;sitting tasks, light effort (e.g., office work, chemistry lab work, computer work, light assembly repair, watch repair, reading, desk work);1,50
-occupation;sitting meetings, light effort, general, and/or with talking involved (e.g., eating at a business meeting);1,50
-occupation;sitting tasks, moderate effort (e.g., pushing heavy levers, riding mower/forklift, crane operation);2,50
+occupation;sitting tasks, light effort, e.g., office work, chemistry lab work, computer work, light assembly repair, watch repair, reading, desk work;1,50
+occupation;sitting meetings, light effort, general, and/or with talking involved, e.g., eating at a business meeting;1,50
+occupation;sitting tasks, moderate effort, e.g., pushing heavy levers, riding mower/forklift, crane operation;2,50
 occupation;sitting, teaching stretching or yoga, or light effort exercise class;2,80
-occupation;standing tasks, light effort (e.g., bartending, store clerk, assembling, filing, duplicating, librarian, putting up a Christmas tree, standing and talking at work, changing clothes when teaching physical education, standing);3,00
-occupation;standing, light/moderate effort (e.g., assemble/repair heavy parts, welding,stocking parts,auto repair,standing, packing boxes, nursing patient care);3,00
+occupation;standing tasks, light effort, e.g., bartending, store clerk, assembling, filing, duplicating, librarian, putting up a Christmas tree, standing and talking at work, changing clothes when teaching physical education, standing;3,00
+occupation;standing, light/moderate effort, e.g., assemble/repair heavy parts, welding,stocking parts,auto repair,standing, packing boxes, nursing patient care;3,00
 occupation;standing, moderate effort, lifting items continuously, 10 – 20 lbs, with limited walking or resting;4,50
 occupation;standing, moderate effort, intermittent lifting 50 lbs, hitch/twisting ropes;3,50
-occupation;standing, moderate/heavy tasks (e.g., lifting more than 50 lbs, masonry, painting, paper hanging);4,50
-occupation;steel mill, moderate effort (e.g., fettling, forging, tipping molds);5,30
-occupation;steel mill, vigorous effort (e.g., hand rolling, merchant mill rolling, removing slag, tending furnace);8,30
+occupation;standing, moderate/heavy tasks, e.g., lifting more than 50 lbs, masonry, painting, paper hanging;4,50
+occupation;steel mill, moderate effort, e.g., fettling, forging, tipping molds;5,30
+occupation;steel mill, vigorous effort, e.g., hand rolling, merchant mill rolling, removing slag, tending furnace;8,30
 occupation;tailoring, cutting fabric;2,30
 occupation;tailoring, general;2,50
 occupation;tailoring, hand sewing;1,80
 occupation;tailoring, machine sewing;2,50
 occupation;tailoring, pressing;3,50
-occupation;tailoring, weaving, light effort (e.g., finishing operations, washing, dyeing, inspecting cloth, counting yards, paperwork);2,00
-occupation;tailoring, weaving, moderate effort (e.g., spinning and weaving operations, delivering boxes of yam to spinners, loading of warp bean, pinwinding, conewinding, warping, cloth cutting);4,00
+occupation;tailoring, weaving, light effort, e.g., finishing operations, washing, dyeing, inspecting cloth, counting yards, paperwork;2,00
+occupation;tailoring, weaving, moderate effort, e.g., spinning and weaving operations, delivering boxes of yam to spinners, loading of warp bean, pinwinding, conewinding, warping, cloth cutting;4,00
 occupation;truck driving, loading and unloading truck, tying down load, standing, walking and carrying heavy loads;6,50
 occupation;Truck, driving delivery truck, taxi, shuttlebus, school bus;2,00
 occupation;typing, electric, manual or computer;1,30
-occupation;using heavy power tools such as pneumatic tools (e.g., jackhammers, drills);6,30
-occupation;using heavy tools (not power) such as shovel, pick, tunnel bar, spade;8,00
+occupation;using heavy power tools such as pneumatic tools, e.g., jackhammers, drills;6,30
+occupation;using heavy tools, not power, such as shovel, pick, tunnel bar, spade;8,00
 occupation;walking on job, less than 2.0 mph, very slow speed, in office or lab area;2,00
 occupation;walking on job, 3.0 mph, in office, moderate speed, not carrying anything;3,50
 occupation;walking on job, 3.5 mph, in office, brisk speed, not carrying anything;4,30
@@ -470,25 +470,25 @@ occupation;walking or walk downstairs or standing, carrying objects about 50 to 
 occupation;walking or walk downstairs or standing, carrying objects about 75 to 99 lbs;7,50
 occupation;walking or walk downstairs or standing, carrying objects about 100 lbs or more;8,50
 occupation;working in scene shop, theater actor, backstage employee;3,00
-running;jog/walk combination (jogging component of less than 10 minutes);6,00
+running;jog/walk combination, jogging component of less than 10 minutes;6,00
 running;jogging, general;7,00
 running;jogging, in place;8,00
 running;jogging, on a mini-tramp;4,50
-running;Running, 4 mph (13 min/mile);6,00
-running;running, 5 mph (12 min/mile);8,30
-running;running, 5.2 mph (11.5 min/mile);9,00
-running;running, 6 mph (10 min/mile);9,80
-running;running, 6.7 mph (9 min/mile);10,50
-running;running, 7 mph (8.5 min/mile);11,00
-running;running, 7.5 mph (8 min/mile);11,50
-running;running, 8 mph (7.5 min/mile);11,80
-running;running, 8.6 mph (7 min/mile);12,30
-running;running, 9 mph (6.5 min/mile);12,80
-running;running, 10 mph (6 min/mile);14,50
-running;running, 11 mph (5.5 min/mile);16,00
-running;running, 12 mph (5 min/mile);19,00
-running;running, 13 mph (4.6 min/mile);19,80
-running;running, 14 mph (4.3 min/mile);23,00
+running;Running, 4 mph, 13 min/mile;6,00
+running;running, 5 mph, 12 min/mile;8,30
+running;running, 5.2 mph, 11.5 min/mile;9,00
+running;running, 6 mph, 10 min/mile;9,80
+running;running, 6.7 mph, 9 min/mile;10,50
+running;running, 7 mph, 8.5 min/mile;11,00
+running;running, 7.5 mph, 8 min/mile;11,50
+running;running, 8 mph, 7.5 min/mile;11,80
+running;running, 8.6 mph, 7 min/mile;12,30
+running;running, 9 mph, 6.5 min/mile;12,80
+running;running, 10 mph, 6 min/mile;14,50
+running;running, 11 mph, 5.5 min/mile;16,00
+running;running, 12 mph, 5 min/mile;19,00
+running;running, 13 mph, 4.6 min/mile;19,80
+running;running, 14 mph, 4.3 min/mile;23,00
 running;running, cross country;9,00
 running;running;8,00
 running;running, stairs, up;15,00
@@ -527,7 +527,7 @@ sports;boxing, in ring, general;12,80
 sports;boxing, punching bag;5,50
 sports;boxing, sparring;7,80
 sports;broomball;7,00
-sports;children’s games, adults playing (e.g., hopscotch, 4-square, dodgeball, playground apparatus, t-ball, tetherball, marbles, arcade games), moderate effort;5,80
+sports;children’s games, adults playing, e.g., hopscotch, 4-square, dodgeball, playground apparatus, t-ball, tetherball, marbles, arcade games, moderate effort;5,80
 sports;cheerleading, gymnastic moves, competitive;6,00
 sports;coaching, football, soccer, basketball, baseball, swimming, etc.;4,00
 sports;coaching, actively playing sport with players;8,00
@@ -569,7 +569,7 @@ sports;horse cart, driving, standing or sitting;1,80
 sports;horseshoe pitching, quoits;3,00
 sports;jai alai;12,00
 sports;martial arts, different types, slower pace, novice performers, practice;5,30
-sports;martial arts, different types, moderate pace (e.g., judo, jujitsu, karate, kick boxing, tae kwan do, tai-bo, Muay Thai boxing);10,30
+sports;martial arts, different types, moderate pace, e.g., judo, jujitsu, karate, kick boxing, tae kwan do, tai-bo, Muay Thai boxing;10,30
 sports;juggling;4,00
 sports;kickball;7,00
 sports;lacrosse;8,00
@@ -597,10 +597,10 @@ sports;shuffleboard;3,00
 sports;skateboarding, general, moderate effort;5,00
 sports;skateboarding, competitive, vigorous effort;6,00
 sports;skating, roller;7,00
-sports;rollerblading, in-line skating, 14.4 km/h (9.0 mph), recreational pace;7,50
-sports;rollerblading, in-line skating, 17.7 km/h (11.0 mph), moderate pace, exercise training;9,80
-sports;rollerblading, in-line skating, 21.0 to 21.7 km/h (13.0 to 13.6 mph), fast pace, exercise training;12,30
-sports;rollerblading, in-line skating, 24.0 km/h (15.0 mph), maximal effort;14,00
+sports;rollerblading, in-line skating, 14.4 km/h, 9.0 mph, recreational pace;7,50
+sports;rollerblading, in-line skating, 17.7 km/h, 11.0 mph, moderate pace, exercise training;9,80
+sports;rollerblading, in-line skating, 21.0 to 21.7 km/h, 13.0 to 13.6 mph, fast pace, exercise training;12,30
+sports;rollerblading, in-line skating, 24.0 km/h, 15.0 mph, maximal effort;14,00
 sports;skydiving, base jumping, bungee jumping;3,50
 sports;soccer, competitive;10,00
 sports;soccer, casual, general;7,00
@@ -625,12 +625,12 @@ sports;volleyball;4,00
 sports;volleyball, competitive, in gymnasium;6,00
 sports;volleyball, non-competitive, 6 – 9 member team, general;3,00
 sports;volleyball, beach, in sand;8,00
-sports;wrestling (one match = 5 minutes);6,00
+sports;wrestling, one match = 5 minutes;6,00
 sports;wallyball, general;7,00
-sports;track and field (e.g., shot, discus, hammer throw);4,00
-sports;track and field (e.g., high jump, long jump, triple jump, javelin, pole vault);6,00
-sports;track and field (e.g., steeplechase, hurdles);10,00
-transportation;automobile or light truck (not a semi) driving;2,50
+sports;track and field, e.g., shot, discus, hammer throw;4,00
+sports;track and field, e.g., high jump, long jump, triple jump, javelin, pole vault;6,00
+sports;track and field, e.g., steeplechase, hurdles;10,00
+transportation;automobile or light truck, not a semi, driving;2,50
 transportation;riding in a car or truck;1,30
 transportation;riding in a bus or train;1,30
 transportation;flying airplane or helicopter;1,80
@@ -641,7 +641,7 @@ transportation;truck, semi, tractor, > 1 ton, or bus, driving;2,50
 transportation;walking for transportation, 2.8-3.2 mph, level, moderate pace, firm surface;3,50
 walking;backpacking;7,00
 walking;backpacking, hiking or organized walking with a daypack;7,80
-walking;carrying 15 pound load (e.g. suitcase), level ground or downstairs;5,00
+walking;carrying 15 pound load, e.g. suitcase, level ground or downstairs;5,00
 walking;carrying 15 lb child, slow walking;2,30
 walking;carrying load upstairs, general;8,30
 walking;carrying 1 to 15 lb load, upstairs;5,00
@@ -798,19 +798,19 @@ religious activities;eating at church;1,50
 religious activities;eating/talking at church or standing eating, American Indian Feast days;2,00
 religious activities;cleaning church;3,30
 religious activities;general yard work at church;4,00
-religious activities;standing, moderate effort (e.g., lifting heavy objects, assembling at fast rate);3,50
+religious activities;standing, moderate effort, e.g., lifting heavy objects, assembling at fast rate;3,50
 religious activities;Standing, moderate-to-heavy effort, manual labor, lifting 50 lbs, heavy maintenance;4,50
 religious activities;typing, electric, manual, or computer;1,30
 volunteer activities;sitting, meeting, general, and/or with talking involved;1,50
 volunteer activities;sitting, light office work, in general;1,50
 volunteer activities;sitting, moderate work;2,50
-volunteer activities;standing, light work (filing, talking, assembling);2,30
+volunteer activities;standing, light work, filing, talking, assembling;2,30
 volunteer activities;sitting, child care, only active periods;2,00
 volunteer activities;standing, child care, only active periods;3,00
 volunteer activities;walk/run play with children, moderate, only active periods;3,50
 volunteer activities;walk/run play with children, vigorous, only active periods;5,80
-volunteer activities;standing, light/moderate work (e.g., pack boxes, assemble/repair, set up chairs/furniture);3,00
-volunteer activities;standing, moderate (lifting 50 lbs., assembling at fast rate);3,50
+volunteer activities;standing, light/moderate work, e.g., pack boxes, assemble/repair, set up chairs/furniture;3,00
+volunteer activities;standing, moderate, lifting 50 lbs., assembling at fast rate;3,50
 volunteer activities;standing, moderate/heavy work;4,50
 volunteer activities;typing, electric, manual, or computer;1,30
 volunteer activities;walking, less than 2.0 mph, very slow;2,00

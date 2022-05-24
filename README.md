@@ -6,9 +6,15 @@ The aim of the project is to build a web application, where users can type in th
 
 Documentation is available at https://hexann666.github.io/calorie_count/
 
+Online version is available at https://share.streamlit.io/hexann666/calorie_count/app.py
+
 # Install
 
 `pip install calorie_count`
+
+# Run app
+
+`streamlit run app.py`
 
 ## Releases (defined according to the Lab's formal requirements)
 
