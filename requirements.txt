@@ -2,4 +2,3 @@ pandas
 regex
 streamlit
 requests
-json
