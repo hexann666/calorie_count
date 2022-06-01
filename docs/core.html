@@ -51,7 +51,7 @@ source for the MET values:  <a href="https://golf.procon.org/met-values-for-800-
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="setup_logger" class="doc_header"><code>setup_logger</code><a href="https://github.com/hexann666/calorie_count/blob/master/calorie_count/core.py#L6" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>setup_logger</code>(<strong><code>loggerName</code></strong>=<em><code>'calorie_count_logger'</code></em>, <strong><code>logFile</code></strong>=<em><code>'log/calorie_count.log'</code></em>)</p>
+<h4 id="setup_logger" class="doc_header"><code>setup_logger</code><a href="https://github.com/hexann666/calorie_count/blob/master/calorie_count/core.py#L7" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>setup_logger</code>(<strong><code>loggerName</code></strong>=<em><code>'calorie_count_logger'</code></em>, <strong><code>logFile</code></strong>=<em><code>'log/calorie_count.log'</code></em>)</p>
 </blockquote>
 <p>Returns a logger with the specified name or "calorie_count_logger", if loggerName is None.
 Generated logs will be stored in the specified file or in log/calorie_count.log, if logFile is None</p>
@@ -97,7 +97,7 @@ logger used in the calorie_count functions</code></pre>
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="input_body_parameters" class="doc_header"><code>input_body_parameters</code><a href="https://github.com/hexann666/calorie_count/blob/master/calorie_count/core.py#L40" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>input_body_parameters</code>()</p>
+<h4 id="input_body_parameters" class="doc_header"><code>input_body_parameters</code><a href="https://github.com/hexann666/calorie_count/blob/master/calorie_count/core.py#L41" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>input_body_parameters</code>()</p>
 </blockquote>
 <p>returns a dictionary with user input of body parameters: height, weight, age, gender and activity level</p>
 <p>Raises:</p>
@@ -133,7 +133,7 @@ a dictionary with body parameters as keys and their values as values</code></pre
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="calculate_bmr_amr" class="doc_header"><code>calculate_bmr_amr</code><a href="https://github.com/hexann666/calorie_count/blob/master/calorie_count/core.py#L93" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>calculate_bmr_amr</code>(<strong><code>body_parameters</code></strong>)</p>
+<h4 id="calculate_bmr_amr" class="doc_header"><code>calculate_bmr_amr</code><a href="https://github.com/hexann666/calorie_count/blob/master/calorie_count/core.py#L94" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>calculate_bmr_amr</code>(<strong><code>body_parameters</code></strong>)</p>
 </blockquote>
 <p>returns basal metabolic rate (bmr) and active metabolic rate (amr)</p>
 <p>Parameters:</p>
@@ -171,7 +171,7 @@ active metabolic rate (amr)</code></pre>
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="calculate_burned_calories" class="doc_header"><code>calculate_burned_calories</code><a href="https://github.com/hexann666/calorie_count/blob/master/calorie_count/core.py#L128" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>calculate_burned_calories</code>(<strong><code>body_parameters</code></strong>)</p>
+<h4 id="calculate_burned_calories" class="doc_header"><code>calculate_burned_calories</code><a href="https://github.com/hexann666/calorie_count/blob/master/calorie_count/core.py#L129" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>calculate_burned_calories</code>(<strong><code>body_parameters</code></strong>)</p>
 </blockquote>
 <p>Returns the amount of calories burned during activity and during the day apart of activity.</p>
 <p>To calculate calories for specific activity its MET value is chosen from the table.
@@ -215,6 +215,137 @@ amount of calories burned during the day apart of activity</code></pre>
 </div>
 </div>
 </div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h2 id="NotionSync" class="doc_header"><code>class</code> <code>NotionSync</code><a href="https://github.com/hexann666/calorie_count/blob/master/calorie_count/core.py#L193" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>NotionSync</code>()</p>
+</blockquote>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h4 id="extract_data_to_df" class="doc_header"><code>extract_data_to_df</code><a href="https://github.com/hexann666/calorie_count/blob/master/calorie_count/core.py#L327" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>extract_data_to_df</code>(<strong><code>data_json</code></strong>)</p>
+</blockquote>
+<p>Returns a DataFrame with all activities from data base and respective time.</p>
+<p>Parameters:
+    data_json
+    data from the data base</p>
+<p>Returns:
+    DataFrame
+    a DataFrame with columns activity and time with a row for each entry in the data base</p>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h4 id="get_activity_sum" class="doc_header"><code>get_activity_sum</code><a href="https://github.com/hexann666/calorie_count/blob/master/calorie_count/core.py#L350" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>get_activity_sum</code>(<strong><code>df</code></strong>)</p>
+</blockquote>
+<p>Returns a DataFrame with summed time for each activity and number of user, who did it, in the data base.</p>
+<p>Parameters:
+    df
+    DataFrame with activity information, must contain columns 'activity', 'time'</p>
+<p>Result:
+    df_sum
+    DataFrame with columns activity, time, number_user</p>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h4 id="show_hist" class="doc_header"><code>show_hist</code><a href="https://github.com/hexann666/calorie_count/blob/master/calorie_count/core.py#L372" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>show_hist</code>(<strong><code>df_sum</code></strong>)</p>
+</blockquote>
+<p>Returns a barplot with all activities from the data base and overall time for each of these activities</p>
+<p>Parameters:
+    df_sum
+    DataFrame with activities and respective summed times</p>
+<p>Returns:
+    plotly.graph_objs._figure.Figure
+    a barplot plotly figure</p>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    {% endraw %}
+
 </div>
 
 
