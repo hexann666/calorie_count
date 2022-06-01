@@ -6,7 +6,11 @@ index = {"setup_logger": "00_core.ipynb",
          "logger": "00_core.ipynb",
          "input_body_parameters": "00_core.ipynb",
          "calculate_bmr_amr": "00_core.ipynb",
-         "calculate_burned_calories": "00_core.ipynb"}
+         "calculate_burned_calories": "00_core.ipynb",
+         "NotionSync": "00_core.ipynb",
+         "extract_data_to_df": "00_core.ipynb",
+         "get_activity_sum": "00_core.ipynb",
+         "show_hist": "00_core.ipynb"}
 
 modules = ["core.py"]
 

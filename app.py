@@ -2,6 +2,29 @@ from itertools import count
 import streamlit as st
 import calorie_count.core as cc
 import pandas as pd
+import requests, json
+
+def get_activity_sum(df):
+    """
+    Returns a DataFrame with summed time for each activity and number of user, who did it, in the data base.
+
+    Parameters:
+        df
+        DataFrame with activity information, must contain columns 'activity', 'time'
+
+    Result:
+        df_sum
+        DataFrame with columns activity, time, number_user 
+
+    """
+    import pandas as pd
+    
+    df_sum = df.groupby('activity').sum()
+    c = df.groupby('activity').count()
+    df_sum = pd.concat([df_sum, c], axis=1)
+    df_sum.columns = ['time', 'number_user']
+    df_sum = df_sum.reset_index()
+    return df_sum
 
 st.set_page_config(page_title='Calorie count', page_icon='🖖')
 
@@ -39,7 +62,7 @@ with col4:
 with st.expander("See activity levels"):
     st.markdown(message_activity_level)
 
-body_params['activity'] = st.selectbox(label='Select your activity level', 
+body_params['activity_level'] = st.selectbox(label='Select your activity level', 
                             options=[1, 2, 3, 4, 5], 
                             index=0,
                             key = 'key1')
@@ -48,17 +71,11 @@ st.write("You entered following body parameters. You can correct your input by c
 df = pd.DataFrame.from_dict(body_params, orient='index', columns=['Your input values'])
 st.dataframe(df.astype(str))
 
-#st.write("You can correct your input by changing it in the corresponding field and pressing Enter")
-
-
 if st.button('Calculate bmr'):
     bmr, amr = cc.calculate_bmr_amr(body_params)
     st.write(f"Your BMR is {bmr:.0f}")
     st.write(f"Your AMR is {amr:.0f}")
     st.text('\n')
-
-#my_expander = st.expander(label='Calculate energy expenditure')
-  
 
 met_list = pd.read_csv('data/met_list_activities.csv',
                                         sep=';', 
@@ -68,7 +85,7 @@ met_list = pd.read_csv('data/met_list_activities.csv',
 nr = 0
 met = 0 
 time = 0
-count = 0
+counts = 0
 burned_cal, bmr_cal = 0, 0
 your_act = '0'
 
@@ -76,19 +93,36 @@ your_act = '0'
 your_act = st.selectbox(label='Possible activities', 
                         options=list(met_list['SPECIFIC MOTION']), 
                         index=0,
-                        key=count)
-count += 1
+                        key=counts)
+counts += 1
 
-#activity = choice
 if len(met_list[met_list['SPECIFIC MOTION'].str.contains(your_act)]) == 1:
     met = float(met_list[met_list['SPECIFIC MOTION'].str.contains(your_act)]['METs'])
-#elif len(met_list[met_list['SPECIFIC MOTION'].str.contains(your_act)]) == 0:
-#    st.text('Please type again')
+
 st.write(f'You selected {your_act} with MET of {met}')
 time = st.number_input('Type in the time of your activity for today in minutes:', min_value=0)
 burned_cal = met * body_params['weight'] * time/60
 bmr_cal = 1.2 * body_params['weight'] * (24 - time / 60)
 if st.button('Calculate'):
-        st.write(f'During {time} min of {your_act} you burned {burned_cal:.0f} kcal.')
-        st.write(f'Your total daily energy expenditure was {round((burned_cal + bmr_cal), 2):.0f} kcal today')
-    #clicked = st.button('Calculate')
+    st.write(f'During {time} min of {your_act} you burned {burned_cal:.0f} kcal.')
+    st.write(f'Your total daily energy expenditure was {round((burned_cal + bmr_cal), 2):.0f} kcal today')
+    body_params['activity'] = your_act
+    body_params['time'] = time
+    body_params = {str(key): str(value) for key, value in body_params.items()}
+    
+    # contact Notion API without user interactions
+    NS = cc.NotionSync()
+    NS.add_entry(body_params)
+    data = NS.query_databases()
+    df = cc.extract_data_to_df(data)
+    df_sum = cc.get_activity_sum(df)
+    df_sum.sort_values(by='time', ascending=False, inplace=True)    
+    number = int(df_sum['number_user'][df_sum['activity']==your_act])
+
+    # output for results of data base querying
+    if number > 1:
+        st.write(f'{number} users of this site were doing {your_act}')
+    elif number == 1:
+        st.write(f'{number} user of this site was doing {your_act}')
+    fig = cc.show_hist(df_sum.head(10))
+    st.write(fig)

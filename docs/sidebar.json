@@ -1,6 +1,7 @@
 {
   "calorie_count": {
     "Overview": "/",
-    "Calorie counter": "core.html"
+    "Calorie counter": "core.html",
+    "Title": "db.html"
   }
 }
