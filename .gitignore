@@ -12,8 +12,10 @@ _tmp*
 tmp*
 tags
 
-# app.ipynb is required only for development
+# notebooks, that are required only for development
 app.ipynb
+db.ipynb
+docs/db*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
