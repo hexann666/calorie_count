@@ -32,12 +32,10 @@ If you deploy the app by yourself, you need to input the secrets for Notion API 
 
 - Web-Application with Streamlit (Web-UI)
 
-### Release 3 (to define)
+### Release 3
 
 - Data bank with Notion ("Datawarehouse") 
 - docker container
-- (Optional) Kubernetes (eg. Okteto)
-- (Optional) Worfklow in MLops-Stil
 
 ## Technical requirements
 
@@ -54,7 +52,7 @@ If you deploy the app by yourself, you need to input the secrets for Notion API 
 - If system provides to user multiple results, she should choose her activity from the provided list and type in the respective number. System should keep the value from the column "METs" for the row number, that was typed in by the user.
 - If MET value is saved and body parameters are available from the previous step, system shall calculate the spent calories and total calories for the day.
 - If calculation step succeeded, system shall print the result on the screen.
-- the input variables and results shall not be stored after the last result is displayed.
+- The input variables and results shall not be stored after the last result is displayed.
 
 ## How to use
 
@@ -75,10 +73,6 @@ Than you will be asked to type in the activity you were doing today. If there ar
 **Note 1**
 
 Pip is doing canonicalization while processing Setup.py to a package and automatically changes dots and underscore to dashes. That's why during installation the name of the package is shown as calorie-count and calorie-count-version-nr, although in all the documentation the name of the package is specified as calorie_count.
-
-**Note 2**
-
-Currently there is a bug in nbdev, when it generates links to the GitHub sourc files from documentation on the GitPages, so it leads to an non-existent link to core.py instead of https://github.com/hexann666/calorie_count/blob/master/calorie_count/core.py. The link specified in settings.ini in git_url is not converted properly.
 
 **Sources:**
 
