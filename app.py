@@ -103,6 +103,8 @@ st.write(f'You selected {your_act} with MET of {met}')
 time = st.number_input('Type in the time of your activity for today in minutes:', min_value=0)
 burned_cal = met * body_params['weight'] * time/60
 bmr_cal = 1.2 * body_params['weight'] * (24 - time / 60)
+#st.write("DB token", st.secrets["db_token"])
+#st.write("DB ID:", st.secrets["db_id"])
 if st.button('Calculate'):
     st.write(f'During {time} min of {your_act} you burned {burned_cal:.0f} kcal.')
     st.write(f'Your total daily energy expenditure was {round((burned_cal + bmr_cal), 2):.0f} kcal today')
@@ -111,7 +113,8 @@ if st.button('Calculate'):
     body_params = {str(key): str(value) for key, value in body_params.items()}
     
     # contact Notion API without user interactions
-    NS = cc.NotionSync()
+
+    NS = cc.NotionSync(st.secrets['db_token'], st.secrets['db_id'])
     NS.add_entry(body_params)
     data = NS.query_databases()
     df = cc.extract_data_to_df(data)

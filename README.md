@@ -16,6 +16,8 @@ Online version is available at https://share.streamlit.io/hexann666/calorie_coun
 
 `streamlit run app.py`
 
+If you deploy the app by yourself, you need to input the secrets for Notion API to be able to connect with Notion database. When deploying the streamlit app, go to Advanced settings and type in your secrets with keys db_token and db_id.
+
 ## Releases (defined according to the Lab's formal requirements)
 
 ### Release 1

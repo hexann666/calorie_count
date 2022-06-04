@@ -191,14 +191,21 @@ def calculate_burned_calories(body_parameters):
 
 # Cell
 class NotionSync:
-    def __init__(self):
+    def __init__(self, db_token, db_id):
         """
         Class for Notion API
+
+        Parameters:
+        db_token
+        security token from Notion API
+
+        db_id
+        database id from Notion API
         """
-        self._token = 'secret_VIJALR8mrQMi6NQC1Sl3SnLHX2ZZVjlFoRa3WZ3SilV'
-        self._db_id = 'e3aef20801fe4934968a5cf86742658f'
+        self._db_id = db_id
+        self._db_token = db_token
         self._headers = {
-                "Authorization": "Bearer " + self._token,
+                "Authorization": "Bearer " + self._db_token,
                 "Content-Type": "application/json",
                 "Notion-Version": "2022-02-22",
                 "Accept": "application/json"
