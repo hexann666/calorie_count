@@ -32,7 +32,7 @@ st.sidebar.markdown("# Calorie count")
 st.sidebar.markdown('First you will provide your **height**, **weight** and **age** and calculate your **Basal Metabolic Rate**, the number of calories required to keep your body functioning at rest.')
 st.sidebar.markdown('After choosing your usual level of activity the **Active Metabolic Rate**, the number of calories that we consume on a daily basis depending on our height, gender, age, weight and entered activity level whilst maintaining current weight, will be calculated.')
 st.sidebar.markdown('To calculate **daily energy expenditure** type in the activity you were doing today and choose activity from the list. It will determine the Metabolic Equivalent of Task (**MET**). Additionally you will enter the **time** you spent doing this activity.')
-st.image('https://raw.githubusercontent.com/hexann666/calorie_count/master/data/image_title.JPG')
+st.image('https://raw.githubusercontent.com/hexann666/calorie_count/master/data/image_title_cropped.JPG')
 
 message_activity_level = '1 - little to no exercise \
                 \n2 - light exercise 1–3 days a week \
