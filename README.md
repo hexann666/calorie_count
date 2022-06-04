@@ -16,7 +16,9 @@ Online version is available at https://share.streamlit.io/hexann666/calorie_coun
 
 `streamlit run app.py`
 
-If you deploy the app by yourself, you need to input the secrets for Notion API to be able to connect with Notion database. When deploying the streamlit app, go to Advanced settings and type in your secrets with keys db_token and db_id.
+To run app locally Notion API needs a folder .streamlit in the main calorie_count folder, where a secrets.toml file with secrets db_token and db_id should be stored for connection with Notion API.
+
+If you deploy the app by yourself, you need to input the secrets for Notion API in the app settings to be able to connect with the database. When deploying the streamlit app, go to Advanced settings and type in your secrets with keys db_token and db_id.
 
 ## Releases (defined according to the Lab's formal requirements)
 
@@ -70,7 +72,7 @@ Than you will be asked to type in the activity you were doing today. If there ar
 
 `cc.calculate_burned_calories(body_parameters)`
 
-**Note 1**
+**Note**
 
 Pip is doing canonicalization while processing Setup.py to a package and automatically changes dots and underscore to dashes. That's why during installation the name of the package is shown as calorie-count and calorie-count-version-nr, although in all the documentation the name of the package is specified as calorie_count.
 

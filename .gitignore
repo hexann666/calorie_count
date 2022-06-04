@@ -148,3 +148,6 @@ checklink/cookies.txt
 
 #.devcontainer/
 .pypirc
+
+# streamlit secrets
+.streamlit/

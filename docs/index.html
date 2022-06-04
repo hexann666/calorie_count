@@ -36,7 +36,8 @@ nb_path: "index.ipynb"
 <p>Online version is available at <a href="https://share.streamlit.io/hexann666/calorie_count/app.py">https://share.streamlit.io/hexann666/calorie_count/app.py</a></p>
 <h1 id="Install">Install<a class="anchor-link" href="#Install"> </a></h1><p><code>pip install calorie_count</code></p>
 <h1 id="Run-app">Run app<a class="anchor-link" href="#Run-app"> </a></h1><p><code>streamlit run app.py</code></p>
-<p>If you deploy the app by yourself, you need to input the secrets for Notion API to be able to connect with Notion database. When deploying the streamlit app, go to Advanced settings and type in your secrets with keys db_token and db_id.</p>
+<p>To run app locally Notion API needs a folder .streamlit in the main calorie_count folder, where a secrets.toml file with secrets db_token and db_id should be stored for connection with Notion API.</p>
+<p>If you deploy the app by yourself, you need to input the secrets for Notion API in the app settings to be able to connect with the database. When deploying the streamlit app, go to Advanced settings and type in your secrets with keys db_token and db_id.</p>
 <h2 id="Releases-(defined-according-to-the-Lab's-formal-requirements)">Releases (defined according to the Lab's formal requirements)<a class="anchor-link" href="#Releases-(defined-according-to-the-Lab's-formal-requirements)"> </a></h2><h3 id="Release-1">Release 1<a class="anchor-link" href="#Release-1"> </a></h3><ul>
 <li>git repository available on GitLab/Hub</li>
 <li>git structure with readme, docs, tests</li>
@@ -74,7 +75,7 @@ nb_path: "index.ipynb"
 <p><code>body_parameters = cc.input_body_parameters()</code></p>
 <p><code>cc.calculate_bmr_amr(body_parameters)</code></p>
 <p><code>cc.calculate_burned_calories(body_parameters)</code></p>
-<p><strong>Note 1</strong></p>
+<p><strong>Note</strong></p>
 <p>Pip is doing canonicalization while processing Setup.py to a package and automatically changes dots and underscore to dashes. That's why during installation the name of the package is shown as calorie-count and calorie-count-version-nr, although in all the documentation the name of the package is specified as calorie_count.</p>
 <p><strong>Sources:</strong></p>
 <p>for the formulas:    <a href="https://www.verywellfit.com/how-many-calories-do-i-need-each-day-2506873">https://www.verywellfit.com/how-many-calories-do-i-need-each-day-2506873</a></p>
